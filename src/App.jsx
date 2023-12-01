@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css'
 import Header from './Header'
 import Card from './Card'
+import GameBoard from './GameBoard';
 
 export default function App() {
 
@@ -11,9 +12,7 @@ export default function App() {
   return (
     <main>
       <Header currentScore={currentScore} bestScore={bestScore} />
-      <div className="card-container">
-        <Card />
-      </div>
+      <GameBoard />
     </main>
   )
 }
